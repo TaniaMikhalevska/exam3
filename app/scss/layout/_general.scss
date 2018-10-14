@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+    font-size: 16px;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+@include font-face (Proxima,  "fonts/proxima/ProximaNova-Regular");
+@include font-face (Proxima-Bold, "fonts/proxima/ProximaNova-Bold", $weight:700);
+
+body {
+    font-family: "Pt Sans", sans-serif;
+    color: $grey;
+}
+a {
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: none;
+        color: $grey;
+      
+    }
+}
+.title {
+    color: $white;
+    font: 2.25rem/3rem $subtitle;
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn {
+    display: flex;
+    width: 195px;
+    justify-content: center;
+    border: 1px solid;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 3.125rem;
+}
+.btn--top {
+    @include size(85px, 85px);
+    background: url(../images/interface---arrow-top-.png) top center no-repeat;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 22;
+}

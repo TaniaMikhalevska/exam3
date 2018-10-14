@@ -1,0 +1,44 @@
+.team {
+    background: #ebebeb;
+    text-align: center;
+    padding-top: 50px;
+    .title {
+      color: $grey; 
+        line-height: 5rem;
+    }
+    &__slide {
+        background: linear-gradient(to bottom, rgba(235,235,235,1) 35%,rgba(235,235,235,1) 35%,rgba(255,255,255,1) 36%,rgba(255,255,255,1) 100%);
+        border: 15px solid #ebebeb;
+        width: 33%;
+        margin-bottom: 50px;
+        
+    }
+    &__photo {
+        border-radius: 100%;
+        display: block;
+        border: 10px solid #ebebeb;
+        margin: 35px 0;
+    }
+    &__name {
+        color: #9f9acf;
+        text-transform: uppercase;
+        font: 700 1.5rem $title;
+    }
+    &__prof {
+        margin: 33px 0 50px;
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+    &__socials {
+        width: 100%;
+        background: #9f9acf;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+    }
+    &__link {
+         padding: 0 10px;
+    }
+    
+}

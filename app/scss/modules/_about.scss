@@ -1,0 +1,35 @@
+.about {
+    padding: 120px 0;
+    &-col {
+        background: url(../images/about.jpg) top center no-repeat;
+        background-size: cover;
+        padding-left: 0;
+    }
+        &__icon {
+            display: flex;
+            margin: 70px auto 42px;
+        }
+    &__text {
+        font-size: 1.25rem;
+        &--bold {
+            font-weight: 700;
+        }
+        &--cursive {
+            font-style: italic;
+        }
+        &:first-child {
+            margin: 70px 0 25px;
+        }
+    }
+    &__btn {
+        margin: 95px auto 100px;
+        color: $grey;
+        border-color: $grey;
+        &:hover {
+            color: $violet;
+            border-color: $violet;
+        }
+        
+    }
+    
+}

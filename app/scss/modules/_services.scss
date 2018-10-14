@@ -1,0 +1,45 @@
+.services {
+    &__col {
+        background: url(../images/services.jpg) top center no-repeat;
+        background-size: cover;
+        color: $white;
+        padding-top: 110px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        padding: 95px 0 130px;
+        color: $grey;
+        min-height: 394px;
+        &--dark {
+            background-color: $bege;
+            
+        }
+        &:hover {
+            background-color: $violet;
+        }
+        
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 4.5rem;
+        text-transform: uppercase;
+    }
+    &__text {
+        text-align: center;
+        width: 60%;
+        font-size: 1.125rem;
+          font-style: italic;
+        &--col {
+            width: 95%;
+        }
+    }
+    &__title {
+        margin: 28px 0 110px;;
+    }
+    &__author {
+        font-weight: 700;
+    }
+}
